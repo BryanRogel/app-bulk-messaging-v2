@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewPhoneNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Números de Teléfono:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPhoneNumbers"
+        android:layout_marginTop="8dp"
+        android:hint="Ingrese los números de teléfono" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhoneNumbers"
+        android:layout_marginTop="16dp"
+        android:text="Mensaje:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMessage"
+        android:layout_marginTop="8dp"
+        android:hint="Ingrese el mensaje" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_marginTop="16dp"
+        android:text="Subir Archivo JSON" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonUpload"
+        android:layout_marginTop="16dp"
+        android:text="Confirmar" />
+
+</RelativeLayout>
